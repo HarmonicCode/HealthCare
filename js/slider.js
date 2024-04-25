@@ -1,0 +1,32 @@
+$('.portfolio-slider').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    autoplay:true,
+    autoplayTimeout:2000, // Adjust autoplay speed here (in milliseconds)
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:4
+        }
+    }
+});
+
+$(document).ready(function(){
+    $("#testimonial-slider").owlCarousel({
+        items:2,
+        itemsDesktop:[1000,2],
+        itemsDesktopSmall:[979,2],
+        itemsTablet:[768,1],
+        pagination:false,
+        navigation:true,
+        navigationText:["",""],
+        autoPlay:true
+    });
+});
